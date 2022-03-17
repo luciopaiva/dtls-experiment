@@ -3,10 +3,10 @@ const { spawn } = require('child_process');
 const chalk = require("chalk");
 
 const PORT = 44330;
-const PAYLOAD_SIZE = 0;
+const PAYLOAD_SIZE = 100;
 const PAYLOAD = "x".repeat(PAYLOAD_SIZE);
 const COMMON_SERVER_OPTIONS = `s_server -key private-key.pem -cert public-cert.pem -accept ${PORT} -quiet`.split(/ /);
-const COMMON_CLIENT_OPTIONS = `s_client -4 -connect localhost:${PORT} -quiet -debug`.split(/ /);
+const COMMON_CLIENT_OPTIONS = `s_client -4 -connect localhost:${PORT} -quiet`.split(/ /);
 const OPENSSL_FLAVORS = {
     // the homebrew version right now is `LibreSSL 3.4.3` and enables DTLS v1.2
     homebrewLibreSSSL: {  // brew install libressl

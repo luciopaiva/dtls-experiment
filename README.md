@@ -3,7 +3,7 @@
 
 This is an experiment to measure the sizes of DTLS messages for different sizes of payloads.
 
-My initial intention was to test it using Node.js alone. Unfortunately, Node.js doesn't support DTLS and there is no npm library available either. The closest thing that resembles a working library is `@nodertc/dtls`, but it only implements the client part. I even tried `npm i github:nodertc/dtls#ee9a8e1` to fetch the most recent commit to date - which mentions a server part - but it doesn't work either as the server implementation is a work in progress (and it seems abandoned by now). So my idea here is to cheat and use openssl cli tool to open both the client and the server and then send/receive data via pipes.
+My initial intention was to test it using Node.js alone. Unfortunately, Node.js doesn't support DTLS and there is no npm library available either. The closest thing that resembles a working library is `@nodertc/dtls`, but it only implements the client part. I even tried `npm i github:nodertc/dtls#ee9a8e1` to fetch the most recent commit to date - which mentions a server part - but it doesn't work either as the server implementation is a work in progress (and it seems abandoned by now). So my idea here is to cheat and use openssl CLI tool to open both the client and the server and then send/receive data via pipes. It works just fine and could theoretically be used by a real application if needed - so check the code if you need to implement a DTLS client/server in Node.js for whatever reason.
 
 ## dtls-test.js
 
