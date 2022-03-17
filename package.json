@@ -10,6 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@nodertc/dtls": "github:nodertc/dtls#ee9a8e1"
+    "chalk": "^4.1.2"
   }
 }
