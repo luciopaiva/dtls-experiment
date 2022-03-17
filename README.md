@@ -1,7 +1,7 @@
 
 # DTLS experiment
 
-This is an experiment to measure the sizes of DTLS messages for different sizes of payloads.
+This is an experiment to measure the final sizes of DTLS messages for different sizes of input payloads.
 
 ![wireshark](wireshark.png)
 
